@@ -1,0 +1,75 @@
+body {
+  background: linear-gradient(-45deg, #ee7752, #e73c7e, #23a6d5, #23d5ab);
+    background-size: 400% 400%;
+    animation: gradient 15s ease infinite; 
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+  #quote-box {
+  font-family: 'Times New Roman', Times, serif;
+  font-weight: bolder;
+  margin-top: 350px;
+  margin-left: 500px;
+  font-size: 20px;
+  max-width: 600px;
+  padding: 20px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  background-color: #fff;
+}
+
+#new-quote,#tweet-quote {
+  align-items: center;
+  appearance: none;
+  background-color: #3EB2FD;
+  background-image: linear-gradient(1deg, #4F58FD, #149BF3 99%);
+  background-size: calc(100% + 20px) calc(100% + 20px);
+  border-radius: 100px;
+  border-width: 0;
+  box-shadow: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-flex;
+  font-family: CircularStd,sans-serif;
+  font-size: 1rem;
+  height: auto;
+  justify-content: center;
+  line-height: 1.5;
+  padding: 6px 20px;
+  position: relative;
+  text-align: center;
+  text-decoration: none;
+  transition: background-color .2s,background-position .2s;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  vertical-align: top;
+  white-space: nowrap;
+  background-position: -20px -20px;
+  box-shadow: rgba(40, 170, 255, 0.25) 0 0 0 .125em;
+  margin: 50px;
+}
+
+#new-quote:active,
+#new-quote:focus {
+  outline: none;
+}
+
+@keyframes gradient {
+  0% {
+      background-position: 0% 10%;
+  }
+  50% {
+      background-position: 10% 10%;
+  }
+  100% {
+      background-position: 0% 10%;
+  }
+}
